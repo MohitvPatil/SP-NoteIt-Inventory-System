@@ -1,0 +1,14 @@
+{
+  "name": "product-management-app",
+  "version": "1.0.0",
+  "description": "Minimalistic Product Management Application with Express, React, and MySQL",
+  "scripts": {
+    "dev": "npm run build:client && npm run dev:server",
+    "dev:server": "cd server && npm run dev",
+    "build:client": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
